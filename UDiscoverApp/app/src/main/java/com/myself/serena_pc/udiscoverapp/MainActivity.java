@@ -40,12 +40,12 @@ public class MainActivity extends Activity {
 		return super.onOptionsItemSelected(item);
 	}
 
-	public void onTourClicked(View view)
+	/*public void onTourClicked(View view)
 	{
 		Intent intent = new Intent(this, GetTourActivity.class);
 
 		startActivity(intent);
-	}
+	}*/
 
 	public void onDirectionsClicked(View view)
 	{
@@ -57,6 +57,13 @@ public class MainActivity extends Activity {
 	public void onInformationClicked(View view)
 	{
 		Intent intent = new Intent(this, GetInformationActivity.class);
+
+		startActivity(intent);
+	}
+
+	public void onMapClicked(View view)
+	{
+		Intent intent = new Intent(this, GetPlainMapActivity.class);
 
 		startActivity(intent);
 	}
