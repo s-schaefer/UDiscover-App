@@ -7,7 +7,8 @@
     android:background="#ffc469"
     android:gravity="top|center_vertical|center_horizontal|center"
     android:orientation="vertical"
-    tools:context="com.myself.serena_pc.udiscoverapp.MainActivity">
+    tools:context="com.myself.serena_pc.udiscoverapp.MainActivity"
+    android:weightSum="1">
 
     <TextView
         android:id="@+id/text1"
@@ -30,16 +31,18 @@
         android:background="#f00"
         android:onClick="onTourClicked"/>
     -->
-	
+
     <Button
         android:id="@+id/button_main_directions"
-        android:layout_width="155dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="#f87531"
         android:onClick="onDirectionsClicked"
-        android:text="@string/get_directions" />
-	
+        android:text="@string/get_directions"
+        android:layout_weight="0.05"
+        android:minHeight="50dp" />
+
     <!--
     <Button
         android:id="@+id/button_main_information"
@@ -53,11 +56,13 @@
 
     <Button
         android:id="@+id/button_main_map"
-        android:layout_width="155dp"
+        android:layout_width="170dp"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
         android:background="#f00"
         android:onClick="onMapClicked"
-        android:text="@string/get_map" />
-	
+        android:text="@string/get_map"
+        android:layout_weight="0.05"
+        android:minHeight="50dip" />
+
 </LinearLayout>
